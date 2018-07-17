@@ -1,0 +1,14 @@
+@media only screen and (max-width: 576px) {
+    .navbar-brand {width: 60vw !important;}
+    .navbar-toggler {border: none;}
+
+    .btn {display: block; margin-bottom: 10px;}
+
+    body.home main #hero {
+        padding: 40px 0 350px;
+        background-position-x: 70% !important;
+        background-position-y: 250px !important;
+        background-repeat: no-repeat;
+        background-color: #dfe0e2;
+    }
+}

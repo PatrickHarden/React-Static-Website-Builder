@@ -1,0 +1,134 @@
+// @import "./spark/spark";
+@import "./../../../vendor/laravel/spark-aurelius/resources/assets/sass/spark";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+$white:#fff;
+$gray:#444444;
+$red:#D7426C;
+$yellow:#FDA83B;
+$green:#2FA2A9;
+$blue:#3a4e5e;
+
+html, body {margin:0; height:100%;}
+.wrapper {
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 75px;
+    min-height: 100%;
+  }
+
+body, p, ul, ol {
+    font: 400 18px/1.8 "Lato", sans-serif !important;
+    color:$blue;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $blue;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+a {color:$green;}
+a:hover {color: $yellow;}
+
+.btn {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-style: initial;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 15px 45px;
+    color: $white;
+    background-color: $gray;
+    border-color: transparent;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.btn-link{background:none; padding:0; color:$blue;}
+.btn-yellow {background:$yellow;}
+.btn-red {background:$red;}
+.btn-green {background:$green;}
+.btn-blue {background:$blue;}
+.btn-hollow {background:transparent !important; border-color: $red; color: $red;}
+
+.btn-primary:hover {background: $green;}
+.btn-hollow:hover {background:$red !important; color: $white !important;}
+
+.note-editor .btn {
+    background-color: #fff;
+    border-color: #c7cdd1;
+    color: #5c6870;
+    font-weight: 300;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+
+
+.navbar {background:$blue;}
+.nav-item .btn {margin-left: 10px;}
+.navbar-brand svg {width: 100%}
+.navbar-brand svg .st0{fill:#fff;}
+.navbar-brand svg .st1{fill:$red;}
+.navbar-brand svg .st2{fill:$yellow;}
+.navbar-brand svg .st3{fill:$green;}
+
+.nav-link.active, .nav-link.active svg, .nav-link:hover, .nav-link:hover svg {color:$green; fill:$green;}
+.nav-link svg {width: 20px;}
+
+body.settings #firmInfoForm input[type=text], body.settings #firmSocialForm input[type=text] {margin-bottom: 10px;}
+body.settings select {margin: 3px 0 20px !important;}
+body.settings .input-group {margin-bottom: 10px;}
+.note-popover.popover {display: none;}
+#accordion .btn-link{display: block; width: 100%; text-align: left;}
+#accordion .btn-link:hover {text-decoration: none; color:$green;}
+#accordion .btn-link:after {font-family: 'FontAwesome'; content: "\f105"; float: right; font-size: 1.5rem; line-height: 1rem; color:$yellow;}
+#accordion .btn-link.collapsed:after {content: "\f107"; color:$yellow;}
+
+body.home main {padding: 0 !important;}
+body.home main section {padding: 100px 0;}
+body.home #hero h1 {
+    font-weight: 900;
+    font-size: 52px;
+    margin: 0;
+    color:$yellow;
+}
+body.home #hero h2 {
+    font-weight: 900;
+    margin: 0;
+    font-size: 39px;
+    margin-top: -10px;
+    color:$green;
+}
+body.home #hero p {margin-top: 10px;}
+body.home #hero .btn {
+    border-color: $red;
+    color: $red;
+}
+body.home #about {background:$white;}
+body.home #about .aboutImg{
+    background:url('https://s3-us-west-2.amazonaws.com/attorneywebbuilder/files/2018/05/awb-talking1.svg');
+    min-height: 400px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+body.home #testimonials {background:$green;}
+
+footer {
+    background: $blue;
+    color: $white;
+    padding: 25px 0;
+    font-weight: 100;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+}
+footer a i {font-size: 1.5rem !important; line-height: 1rem !important;}
+
+@import "mobile.scss";
