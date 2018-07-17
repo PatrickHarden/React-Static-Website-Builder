@@ -42,6 +42,7 @@ class WebsiteController extends Controller
                     'private'       => false,
                     'branch'        => 'master',
                     // Pass user_id to a user.json file generated on build
+                    // touch user.josn && echo "{'user_id': {'"$user_id"'}}" >> user.josn && yarn build 
                     'cmd'           => 'yarn build',
                     'dir'           => 'dist',
                     'deploy_key_id' => $deployKey->id
